@@ -1,0 +1,87 @@
+/* Rimuovere margini e padding di default */
+html, body {
+    margin: 0; /* Rimuove il margine predefinito */
+    padding: 0; /* Rimuove il padding predefinito */
+    width: 100%; /* Imposta la larghezza al 100% */
+    height: 100%; /* Imposta l'altezza al 100% */
+    box-sizing: border-box; /* Include il padding e il bordo nel calcolo della larghezza e dell'altezza */
+    font-family: Arial, sans-serif; /* Imposta il font predefinito */
+}
+
+/* Container principale */
+.main {
+    text-align: center; /* Centra il testo */
+    margin: 50px auto; /* Centra l'elemento con margini automatici e imposta un margine superiore di 50px */
+    padding: 20px; /* Aggiunge un padding interno di 20px */
+}
+
+/* Titolo di feedback */
+.feedback-title {
+    font-size: 2em; /* Imposta la dimensione del font a 2em */
+    color: #333; /* Imposta il colore del testo a grigio scuro */
+    margin-bottom: 20px; /* Aggiunge un margine inferiore di 20px */
+}
+
+/* Stili per l'icona di stato */
+#icon {
+    display: flex; /* Utilizza Flexbox per il layout */
+    justify-content: center; /* Centra orizzontalmente gli elementi figli */
+    align-items: center; /* Centra verticalmente gli elementi figli */
+}
+
+#check {
+    width: 70px; /* Imposta la larghezza a 70px */
+    height: 70px; /* Imposta l'altezza a 70px */
+}
+
+/* Classe per animazione di progresso */
+.progress {
+    animation: progress 2s ease-out; /* Applica l'animazione 'progress' per 2 secondi con easing 'ease-out' */
+}
+
+/* Classe per animazione di stato pronto */
+.ready {
+    animation: ready 0.5s ease-out forwards; /* Applica l'animazione 'ready' per 0.5 secondi con easing 'ease-out' e riempie il finale */
+}
+
+/* Definizione dell'animazione 'progress' */
+@keyframes progress {
+    0% {
+        transform: scale(0.8); /* Scala l'elemento a 80% */
+        stroke-dasharray: 290; /* Imposta l'array dei tratti a 290 */
+        stroke-dashoffset: 290; /* Imposta l'offset dei tratti a 290 */
+    }
+    100% {
+        transform: scale(1); /* Scala l'elemento a 100% */
+        stroke-dasharray: 290; /* Mantiene l'array dei tratti a 290 */
+        stroke-dashoffset: 0; /* Imposta l'offset dei tratti a 0 */
+    }
+}
+
+/* Definizione dell'animazione 'ready' */
+@keyframes ready {
+    0% {
+        stroke-dashoffset: 0; /* Imposta l'offset dei tratti a 0 */
+    }
+    100% {
+        stroke-dashoffset: 0; /* Mantiene l'offset dei tratti a 0 */
+        stroke: #4caf50; /* Cambia il colore del tratto a verde */
+        stroke-width: 5px; /* Imposta la larghezza del tratto a 5px */
+    }
+}
+
+/* Stile per il cerchio */
+#circle {
+    stroke: #ddd; /* Colore del tratto grigio chiaro */
+    stroke-width: 4; /* Larghezza del tratto 4px */
+    fill: transparent; /* Nessun riempimento */
+}
+
+/* Stile per il segno di spunta */
+#tick {
+    stroke: #4caf50; /* Colore del tratto verde */
+    stroke-width: 5; /* Larghezza del tratto 5px */
+    fill: transparent; /* Nessun riempimento */
+    stroke-linecap: round; /* Arrotonda le estremità dei tratti */
+    stroke-linejoin: round; /* Arrotonda gli angoli dei tratti */
+}

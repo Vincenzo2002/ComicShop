@@ -1,0 +1,165 @@
+/* Rimuovere il margine e il padding del body */
+body {
+    margin: 0; /* Rimuove il margine di default */
+    padding: 0; /* Rimuove il padding di default */
+}
+
+.container {
+    display: flex; /* Utilizza il flexbox layout */
+    margin: 0; /* Rimuove il margine */
+    padding: 0; /* Rimuove il padding se necessario */
+}
+
+.sidebar {
+    width: 200px; /* Imposta la larghezza della sidebar */
+    background-color: #f8f8f8; /* Colore di sfondo della sidebar */
+    padding: 15px; /* Padding interno della sidebar */
+    border-right: 1px solid #ddd; /* Bordo destro */
+    margin: 0; /* Rimuove il margine laterale se necessario */
+}
+
+.sidebar ul {
+    list-style-type: none; /* Rimuove i punti elenco */
+    padding: 0; /* Rimuove il padding interno */
+    margin: 0; /* Rimuove il margine per l'ul */
+}
+
+.sidebar ul li {
+    margin-bottom: 10px; /* Spazio inferiore tra gli elementi della lista */
+}
+
+.sidebar ul li a {
+    text-decoration: none; /* Rimuove la sottolineatura dai link */
+    color: #333; /* Colore del testo dei link */
+    font-weight: normal; /* Font normale */
+}
+
+.main-container {
+    flex-grow: 1; /* L'elemento principale si espande per riempire lo spazio disponibile */
+    padding: 20px; /* Padding interno del contenitore principale */
+    margin: 0; /* Rimuove il margine per il contenitore principale */
+}
+
+.container-header {
+    border-bottom: 1px solid #ddd; /* Bordo inferiore */
+    padding-bottom: 10px; /* Padding inferiore */
+    margin-bottom: 20px; /* Margine inferiore */
+    text-align: center; /* Allinea il testo al centro */
+}
+
+.container-title {
+    margin: 0; /* Rimuove il margine del titolo */
+    font-weight: normal; /* Font normale */
+}
+
+.info-container {
+    margin-top: 20px; /* Margine superiore */
+    max-width: 600px; /* Larghezza massima del contenitore */
+    margin: auto; /* Centra il contenitore orizzontalmente */
+    border: 1px solid #ddd; /* Bordo */
+    padding: 15px; /* Padding interno */
+    background-color: #f9f9f9; /* Colore di sfondo */
+    border-radius: 5px; /* Angoli arrotondati */
+}
+
+.field {
+    margin-bottom: 10px; /* Margine inferiore */
+    display: flex; /* Utilizza il flexbox layout */
+    justify-content: flex-start; /* Allinea gli elementi all'inizio */
+    align-items: center; /* Allinea gli elementi al centro verticalmente */
+    padding: 0; /* Rimuove il padding per il campo */
+}
+
+.bold {
+    font-weight: bold; /* Font in grassetto */
+    margin-right: 10px; /* Margine destro */
+}
+
+.field-value {
+    display: inline-block; /* Mostra come blocco in linea */
+    font-weight: normal; /* Font normale */
+}
+
+/* Media query per dispositivi di larghezza massima 768px */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Dispone gli elementi in colonna */
+        margin: 0; /* Rimuove il margine per la visualizzazione mobile */
+    }
+
+    .sidebar {
+        width: 100%; /* Larghezza completa per la sidebar */
+        box-shadow: none; /* Rimuove l'ombra */
+        margin: 0; /* Rimuove il margine per la sidebar mobile */
+    }
+
+    .field {
+        flex-direction: column; /* Dispone gli elementi in colonna */
+        align-items: flex-start; /* Allinea gli elementi all'inizio */
+        margin-bottom: 0; /* Riduce il margine tra i campi */
+    }
+}
+
+/* Media query per dispositivi di larghezza massima 480px */
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column; /* Dispone gli elementi in colonna */
+        margin: 0; /* Rimuove il margine per la visualizzazione mobile */
+        padding: 0; /* Rimuove il padding per la visualizzazione mobile */
+    }
+
+    .sidebar {
+        width: 100%; /* Larghezza completa per la sidebar */
+        padding: 10px; /* Riduce il padding per adattarsi agli schermi più piccoli */
+        margin: 0; /* Rimuove il margine per la sidebar mobile */
+        border-right: none; /* Rimuove il bordo destro per la visualizzazione mobile */
+        border-bottom: 1px solid #ddd; /* Aggiunge un bordo inferiore per separare le sezioni */
+    }
+
+    .sidebar ul li {
+        margin-bottom: 8px; /* Riduce il margine tra gli elementi della lista */
+    }
+
+    .main-container {
+        flex-grow: 1; /* L'elemento principale si espande per riempire lo spazio disponibile */
+        padding: 15px; /* Riduce il padding per la visualizzazione mobile */
+        margin: 0; /* Rimuove il margine per il contenitore principale mobile */
+    }
+
+    .container-header {
+        padding-bottom: 8px; /* Riduce il padding inferiore */
+        margin-bottom: 15px; /* Riduce il margine inferiore */
+    }
+
+    .container-title {
+        margin: 0; /* Rimuove il margine del titolo */
+        font-size: 1.5em; /* Regola la dimensione del font per una migliore visibilità */
+    }
+
+    .info-container {
+        margin-top: 15px; /* Riduce il margine superiore */
+        max-width: 100%; /* Assicura che il contenitore usi tutta la larghezza disponibile */
+        padding: 10px; /* Riduce il padding per adattarsi agli schermi più piccoli */
+    }
+
+    .field {
+        flex-direction: column; /* Dispone i campi verticalmente */
+        align-items: flex-start; /* Allinea i campi a sinistra */
+        margin-bottom: 8px; /* Riduce il margine tra i campi */
+        padding: 0; /* Rimuove il padding per i campi */
+    }
+
+    .bold {
+        margin-right: 0; /* Rimuove il margine destro */
+        margin-bottom: 5px; /* Aggiunge un margine inferiore per la separazione */
+    }
+
+    .field-value {
+        display: block; /* Assicura che i valori occupino tutta la larghezza disponibile */
+        margin-bottom: 5px; /* Aggiunge un margine inferiore per la separazione */
+    }
+}
+
+
+
+

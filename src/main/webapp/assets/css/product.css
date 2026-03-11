@@ -1,0 +1,317 @@
+/* Impostazioni di base per html e body */
+html, body {
+    height: 100%; /* Imposta l'altezza al 100% */
+    margin: 0; /* Rimuove il margine predefinito */
+    padding: 0; /* Rimuove il padding predefinito */
+    display: flex; /* Layout flexbox */
+    flex-direction: column; /* Disposizione in colonna */
+}
+
+/* Contenitore principale */
+.main-container {
+    display: flex; /* Layout flexbox */
+}
+
+/* Contenitore del prodotto */
+.product-container {
+    display: flex; /* Layout flexbox */
+    flex-direction: row; /* Disposizione in riga */
+    margin: 20px; /* Margine intorno al contenitore */
+    padding: 20px; /* Padding all'interno del contenitore */
+    border: 1px solid #ddd; /* Bordo grigio chiaro */
+    border-radius: 8px; /* Angoli arrotondati */
+    background-color: #f9f9f9; /* Colore di sfondo grigio chiaro */
+}
+
+/* Stili per le immagini del prodotto */
+.product-container img {
+    border-radius: 8px; /* Angoli arrotondati per le immagini */
+    max-width: 100%; /* Larghezza massima 100% del contenitore */
+    height: auto; /* Altezza automatica */
+}
+
+/* Informazioni sul prodotto */
+.product-info {
+    margin-left: 20px; /* Margine sinistro */
+    display: flex; /* Layout flexbox */
+    flex-direction: column; /* Disposizione in colonna */
+    justify-content: center; /* Allineamento verticale al centro */
+}
+
+/* Titolo del prodotto */
+.product-title {
+    font-size: 24px; /* Dimensione del carattere */
+    color: #333; /* Colore del testo */
+    margin: 0 0 10px 0; /* Margini */
+}
+
+/* Nome del prodotto */
+.product-name {
+    font-weight: bold; /* Testo in grassetto */
+}
+
+/* Stile del paragrafo */
+.paragraph {
+    font-size: 16px; /* Dimensione del carattere */
+    color: #666; /* Colore del testo */
+    margin: 5px 0; /* Margini */
+}
+
+/* Testo in grassetto */
+.bold {
+    font-weight: bold; /* Testo in grassetto */
+}
+
+/* Nome del marchio */
+.brand-name {
+    font-weight: bold; /* Testo in grassetto */
+    color: #333; /* Colore del testo */
+}
+
+/* Campo di input */
+.field {
+    margin-top: 20px; /* Margine superiore */
+}
+
+/* Input di testo */
+.text-input {
+    width: 60px; /* Larghezza dell'input */
+    padding: 5px; /* Padding interno */
+    border: 1px solid #ddd; /* Bordo grigio chiaro */
+    border-radius: 4px; /* Angoli arrotondati */
+}
+
+/* Bottone */
+.btn-accent {
+    background-color: rgb(128, 0, 128); /* Sfondo viola */
+    color: #fff; /* Testo bianco */
+    border: none; /* Nessun bordo */
+    padding: 10px 20px; /* Padding interno */
+    border-radius: 4px; /* Angoli arrotondati */
+    cursor: pointer; /* Puntatore a mano */
+    display: inline-flex; /* Layout flexbox inline */
+    align-items: center; /* Allineamento verticale al centro */
+}
+
+/* Hover sul bottone */
+.btn-accent:hover {
+    background-color: rgba(128, 0, 128, 0.71); /* Viola più scuro */
+}
+
+/* Bottone di navigazione */
+.nav-button {
+    font-size: 16px; /* Dimensione del carattere */
+    margin-left: 10px; /* Margine sinistro */
+}
+
+/* Icone Font Awesome */
+.fas {
+    margin-right: 5px; /* Margine destro */
+}
+
+/* Stile del footer */
+.footer {
+    background-color: #000; /* Sfondo nero */
+    color: #fff; /* Testo bianco */
+    padding: 20px 0; /* Padding verticale */
+    font-size: 14px; /* Dimensione del carattere */
+    text-align: center; /* Testo centrato */
+    border-top: 1px solid #666; /* Bordo superiore grigio */
+    margin-top: auto; /* Spinge il footer verso il basso */
+}
+
+/* Sezione di feedback */
+.feedback-section {
+    margin: 20px; /* Margini */
+    padding: 20px; /* Padding interno */
+    border: 1px solid #ddd; /* Bordo grigio chiaro */
+    border-radius: 8px; /* Angoli arrotondati */
+    background-color: #f1f1f1; /* Colore di sfondo grigio chiaro */
+}
+
+/* Titolo della sezione di feedback */
+.feedback-section h2 {
+    font-size: 24px; /* Dimensione del carattere */
+    color: #333; /* Colore del testo */
+    margin-bottom: 15px; /* Margine inferiore */
+}
+
+/* Bottone nella sezione di feedback */
+.feedback-section button {
+    background-color: rgba(128, 0, 128, 0.71); /* Sfondo Viola */
+    color: #fff; /* Testo bianco */
+    border: none; /* Nessun bordo */
+    padding: 10px 20px; /* Padding interno */
+    border-radius: 4px; /* Angoli arrotondati */
+    cursor: pointer; /* Puntatore a mano */
+    font-size: 16px; /* Dimensione del carattere */
+    margin-bottom: 20px; /* Margine inferiore */
+}
+
+/* Hover sul bottone nella sezione di feedback */
+.feedback-section button:hover {
+    background-color: rgb(128, 0, 128); /* Viola più scuro */
+}
+
+/* Form di feedback */
+#feedback-form {
+    margin-top: 20px; /* Margine superiore */
+}
+
+/* Etichetta del form di feedback */
+#feedback-form label {
+    display: block; /* Visualizza come blocco */
+    margin-bottom: 5px; /* Margine inferiore */
+    font-weight: bold; /* Testo in grassetto */
+}
+
+/* Input e textarea del form di feedback */
+#feedback-form input[type="text"],
+#feedback-form textarea,
+#feedback-form input[type="number"] {
+    width: 100%; /* Larghezza 100% del contenitore */
+    padding: 8px; /* Padding interno */
+    border: 1px solid #ddd; /* Bordo grigio chiaro */
+    border-radius: 4px; /* Angoli arrotondati */
+    margin-bottom: 10px; /* Margine inferiore */
+}
+
+/* Altezza del textarea del form di feedback */
+#feedback-form textarea {
+    height: 100px; /* Altezza */
+}
+
+/* Bottone del form di feedback */
+#feedback-form button {
+    background-color: rgba(128, 0, 128, 0.71); /* Sfondo verde */
+    color: #fff; /* Testo bianco */
+    border: none; /* Nessun bordo */
+    padding: 10px 20px; /* Padding interno */
+    border-radius: 4px; /* Angoli arrotondati */
+    cursor: pointer; /* Puntatore a mano quando si passa sopra*/
+    font-size: 16px; /* Dimensione del carattere */
+}
+
+/* Hover sul bottone del form di feedback */
+#feedback-form button:hover {
+    background-color: rgb(128, 0, 128); /* Viola scuro */
+}
+
+/* Lista dei feedback */
+.feedback-list {
+    margin-top: 20px; /* Margine superiore */
+}
+
+/* Elemento della lista di feedback */
+.feedback-item {
+    padding: 10px; /* Padding interno */
+    border-bottom: 1px solid #ddd; /* Bordo inferiore grigio chiaro */
+}
+
+/* Rimozione del bordo inferiore per l'ultimo elemento della lista di feedback */
+.feedback-item:last-child {
+    border-bottom: none; /* Nessun bordo inferiore */
+}
+
+/* Titolo dell'elemento della lista di feedback */
+.feedback-item h3 {
+    font-size: 20px; /* Dimensione del carattere */
+    color: #333; /* Colore del testo */
+    margin: 0 0 10px 0; /* Margini */
+}
+
+/* Paragrafo dell'elemento della lista di feedback */
+.feedback-item p {
+    font-size: 16px; /* Dimensione del carattere */
+    color: #666; /* Colore del testo */
+    margin: 5px 0; /* Margini */
+}
+
+/* Animazione bottone aggiungi al carrello */
+@keyframes bounce {
+    0% {
+        transform: scale(1); /* Scala iniziale */
+    }
+    50% {
+        transform: scale(1.1); /* Scala ingrandita */
+    }
+    100% {
+        transform: scale(1); /* Scala finale */
+    }
+}
+
+/* Bottone */
+.btn-accent {
+    position: relative; /* Posizionamento relativo */
+    overflow: hidden; /* Nasconde gli elementi fuori dal contenitore */
+}
+
+/* Bottone */
+.btn-accent.animate {
+    animation: bounce 0.5s ease; /* Applica l'animazione */
+}
+
+/* Effetto di animazione */
+.btn-accent .animation-effect {
+    position: absolute; /* Posizionamento */
+    width: 100%; /* Larghezza 100% del contenitore */
+    height: 100%; /* Altezza 100% del contenitore */
+    top: 0; /* Allinea in alto */
+    left: 0; /* Allinea a sinistra */
+    background: rgba(128, 0, 128, 0.42); /* Sfondo viola trasparente */
+    border-radius: 5px; /* Angoli arrotondati */
+    transform: scale(0); /* Scala iniziale */
+    pointer-events: none; /* Disabilita gli eventi del mouse */
+}
+
+/* Effetto di animazione attivo */
+.btn-accent.animate .animation-effect {
+    transform: scale(2); /* Scala ingrandita */
+    transition: transform 0.5s ease; /* Transizione fluida */
+}
+
+/* Per dispositivi con larghezza massima di 768px */
+@media (max-width: 768px) {
+    .product-container {
+        flex-direction: column; /* Disposizione in colonna */
+        align-items: center; /* Allineamento centrale */
+    }
+
+    .product-info {
+        margin-left: 0; /* Rimuove il margine sinistro */
+        text-align: center; /* Testo centrato */
+    }
+}
+
+/* Per dispositivi con larghezza massima di 480px */
+@media (max-width: 480px) {
+    .product-title {
+        font-size: 20px; /* Riduce la dimensione del carattere */
+    }
+
+    .price {
+        font-size: 18px; /* Riduce la dimensione del carattere */
+    }
+
+    .paragraph {
+        font-size: 14px; /* Riduce la dimensione del carattere */
+    }
+
+    .text-input {
+        width: 50px; /* Riduce la larghezza dell'input */
+    }
+
+    .btn-accent {
+        padding: 8px 16px; /* Riduce il padding interno */
+        font-size: 14px; /* Riduce la dimensione del carattere */
+    }
+
+    .nav-button {
+        font-size: 14px; /* Riduce la dimensione del carattere */
+    }
+
+    .product-container {
+        margin: 10px; /* Riduce il margine intorno al contenitore */
+        padding: 10px; /* Riduce il padding interno */
+    }
+}

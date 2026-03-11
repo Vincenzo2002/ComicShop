@@ -1,0 +1,190 @@
+/* Reset margini e padding */
+html, body {
+    margin: 0; /* Rimuove il margine predefinito */
+    padding: 0; /* Rimuove il padding predefinito */
+    height: 100%; /* Imposta l'altezza al 100% */
+    font-family: Arial, sans-serif; /* Imposta il font di default */
+}
+
+.container {
+    min-height: calc(100vh - 80px); /* Regola l'altezza basandosi sull'altezza di header/footer */
+    width: 90%; /* Imposta la larghezza al 90% */
+    margin: 20px auto; /* Centro orizzontalmente con margini verticali */
+    padding: 20px; /* Aggiunge padding interno */
+    background-color: #fff; /* Colore di sfondo bianco */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Aggiunge un'ombra */
+    border-radius: 5px; /* Arrotonda gli angoli */
+}
+
+/* Stile per la tabella */
+table {
+    width: 100%; /* La tabella occupa il 100% della larghezza del contenitore */
+    border-collapse: collapse; /* Collassa i bordi della tabella */
+    margin-bottom: 20px; /* Aggiunge un margine inferiore */
+}
+
+table th, table td {
+    padding: 12px 15px; /* Aggiunge padding interno alle celle */
+    text-align: left; /* Allinea il testo a sinistra */
+    border: 1px solid #ddd; /* Bordo delle celle grigio chiaro */
+}
+
+/* Stile per l'intestazione della tabella */
+#table-heading h3 {
+    margin: 0; /* Rimuove il margine */
+    padding: 10px 0; /* Aggiunge padding verticale */
+    background-color: #800080; /* Colore di sfondo viola */
+    color: #fff; /* Colore del testo bianco */
+    text-align: center; /* Allinea il testo al centro */
+    border-radius: 5px 5px 0 0; /* Arrotonda gli angoli superiori */
+}
+
+.bold {
+    font-weight: bold; /* Testo in grassetto */
+}
+
+.paragraph {
+    margin: 5px 0; /* Margine verticale per i paragrafi */
+}
+
+.details {
+    color: #800080; /* Colore del testo viola */
+    text-decoration: none; /* Rimuove la sottolineatura */
+    font-weight: bold; /* Testo in grassetto */
+}
+
+.details:hover {
+    text-decoration: underline; /* Sottolinea il testo al passaggio del mouse */
+}
+
+/* Stile per la paginazione */
+.pagination {
+    display: flex; /* Utilizza il layout flexbox */
+    justify-content: center; /* Centra i contenuti orizzontalmente */
+    margin: 20px 0; /* Margine verticale */
+}
+
+.pagination a {
+    margin: 0 5px; /* Margine orizzontale tra i link */
+    padding: 10px 20px; /* Padding interno */
+    background-color: #800080; /* Colore di sfondo viola */
+    color: #fff; /* Colore del testo bianco */
+    text-decoration: none; /* Rimuove la sottolineatura */
+    border-radius: 5px; /* Arrotonda gli angoli */
+    transition: background-color 0.3s; /* Transizione per il colore di sfondo */
+}
+
+.pagination a:hover {
+    background-color: #5a005a; /* Colore di sfondo al passaggio del mouse */
+}
+
+.btn-accent {
+    background-color: #800080; /* Colore di sfondo viola */
+    color: #fff; /* Colore del testo bianco */
+    border: none; /* Nessun bordo */
+    border-radius: 5px; /* Arrotonda gli angoli */
+    padding: 10px 15px; /* Padding interno */
+    font-size: 14px; /* Dimensione del font */
+    cursor: pointer; /* Cambia il cursore in pointer */
+    display: flex; /* Utilizza il layout flexbox */
+    align-items: center; /* Allinea gli elementi al centro verticalmente */
+}
+
+/* Effetto hover per i bottoni */
+.btn-accent:hover {
+    background-color: rgba(128, 0, 128, 0.71); /* Colore di sfondo al passaggio del mouse */
+}
+
+/* Regolazioni per il footer e la navbar */
+footer {
+    position: relative; /* Posizionamento relativo */
+    bottom: 0; /* Allinea al fondo */
+    width: 100%; /* Larghezza al 100% */
+    background-color: #333; /* Colore di sfondo grigio scuro */
+    color: white; /* Colore del testo bianco */
+    text-align: center; /* Testo centrato */
+    padding: 10px 0; /* Padding verticale */
+}
+
+nav {
+    background-color: #333; /* Colore di sfondo grigio scuro */
+    color: white; /* Colore del testo bianco */
+    padding: 10px 0; /* Padding verticale */
+}
+
+/* Media query per dispositivi di larghezza massima 768px */
+@media (max-width: 768px) {
+    .container {
+        width: 100%; /* Larghezza al 100% */
+        padding: 10px; /* Riduce il padding */
+    }
+
+    table th, table td {
+        padding: 8px 10px; /* Riduce il padding delle celle */
+        font-size: 14px; /* Riduce la dimensione del font */
+    }
+
+    table {
+        border: 0; /* Rimuove il bordo */
+        display: block; /* Mostra la tabella come blocco */
+        width: 100%; /* Larghezza al 100% */
+        overflow-x: auto; /* Abilita lo scrolling orizzontale */
+        white-space: nowrap; /* Impedisce il wrapping del testo */
+    }
+
+    table thead {
+        display: none; /* Nasconde l'intestazione della tabella */
+    }
+
+    table tbody, table tr, table td {
+        display: block; /* Mostra le righe e le celle come blocco */
+        width: 100%; /* Larghezza al 100% */
+        box-sizing: border-box; /* Include il padding e i bordi nel calcolo della dimensione */
+    }
+
+    table tr {
+        margin-bottom: 10px; /* Margine inferiore per le righe */
+        border-bottom: 1px solid #ddd; /* Bordo inferiore */
+    }
+
+    table td {
+        padding: 10px; /* Padding interno per le celle */
+        text-align: right; /* Allinea il testo a destra */
+        position: relative; /* Posizionamento relativo */
+        border: none; /* Rimuove il bordo */
+        display: block; /* Mostra le celle come blocco */
+    }
+
+    table td::before {
+        content: attr(data-label); /* Mostra l'etichetta dei dati */
+        position: absolute; /* Posizionamento assoluto */
+        left: 0; /* Allinea a sinistra */
+        width: 40%; /* Larghezza del 40% */
+        padding: 5px; /* Padding interno */
+        font-weight: bold; /* Testo in grassetto */
+        background-color: #f9f9f9; /* Colore di sfondo chiaro */
+        border-right: 1px solid #ddd; /* Bordo destro */
+        box-sizing: border-box; /* Include il padding e i bordi nel calcolo della dimensione */
+    }
+
+    .pagination a {
+        padding: 8px 12px; /* Riduce il padding dei link */
+        font-size: 12px; /* Riduce la dimensione del font */
+    }
+
+    footer, nav {
+        padding: 8px 0; /* Riduce il padding verticale */
+    }
+}
+
+/* Media query per dispositivi di larghezza massima 480px */
+@media (max-width: 480px) {
+    .container {
+        padding: 5px; /* Riduce ulteriormente il padding */
+    }
+
+    .pagination a {
+        padding: 6px 10px; /* Riduce ulteriormente il padding dei link */
+        font-size: 12px; /* Riduce ulteriormente la dimensione del font */
+    }
+}

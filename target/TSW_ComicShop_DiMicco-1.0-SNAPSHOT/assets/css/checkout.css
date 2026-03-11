@@ -1,0 +1,216 @@
+/* Rimuovere margini e padding di default */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif; /* Font principale */
+}
+
+/* Container principale per il checkout */
+.checkout {
+    max-width: 1200px; /* Larghezza massima */
+    margin: 20px auto; /* Centrato orizzontalmente con margine verticale */
+    padding: 20px; /* Spazio interno */
+    box-sizing: border-box; /* Include padding e bordo nella larghezza totale */
+}
+
+/* Stile per la card di pagamento */
+.payment-card {
+    background-color: #f9f9f9; /* Colore di sfondo */
+    border: 1px solid #ddd; /* Bordo grigio chiaro */
+    border-radius: 5px; /* Angoli arrotondati */
+    padding: 20px; /* Spazio interno */
+    margin-bottom: 20px; /* Spazio inferiore */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Ombra */
+}
+
+.payment-card-header {
+    display: flex; /* Flexbox */
+    align-items: center; /* Centrato verticalmente */
+    justify-content: space-between; /* Spazio tra gli elementi */
+    margin-bottom: 20px; /* Spazio inferiore */
+}
+
+.payment-card-header h3 {
+    font-size: 1.8em; /* Dimensione font */
+    color: #333; /* Colore testo */
+    margin: 0; /* Nessun margine */
+}
+
+.payment-card-body {
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Colonna */
+}
+
+.field {
+    margin-bottom: 15px; /* Spazio inferiore */
+}
+
+.field label {
+    display: block; /* Blocco */
+    font-size: 1em; /* Dimensione font */
+    color: #333; /* Colore testo */
+}
+
+.payment-long-input {
+    width: 100%; /* Larghezza completa */
+    padding: 10px; /* Spazio interno */
+    border: 1px solid #ccc; /* Bordo grigio */
+    border-radius: 5px; /* Angoli arrotondati */
+    box-sizing: border-box; /* Include padding e bordo nella larghezza totale */
+}
+
+/* Stile per i campi di input */
+.text-input {
+    width: calc(100% - 20px); /* Larghezza ridotta di 20px */
+    padding: 10px; /* Spazio interno */
+    margin-bottom: 10px; /* Spazio inferiore */
+    border: 1px solid #ccc; /* Bordo grigio */
+    border-radius: 5px; /* Angoli arrotondati */
+    box-sizing: border-box; /* Include padding e bordo nella larghezza totale */
+}
+
+.row-2-input {
+    display: flex; /* Flexbox */
+    justify-content: space-between; /* Spazio tra gli elementi */
+    gap: 10px; /* Spazio tra gli elementi */
+}
+
+.row-2-input .field {
+    flex: 1; /* Occupa tutto lo spazio disponibile */
+}
+
+/* Stile per la sezione totale importo */
+.total-amount {
+    background-color: #f9f9f9; /* Colore di sfondo */
+    border: 1px solid #ddd; /* Bordo grigio chiaro */
+    border-radius: 5px; /* Angoli arrotondati */
+    padding: 20px; /* Spazio interno */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Ombra */
+}
+
+.info-body {
+    margin-top: 20px; /* Margine superiore */
+}
+
+.info-body table {
+    width: 100%; /* Larghezza completa */
+    border-collapse: collapse; /* Elimina spazi tra bordi delle celle */
+}
+
+.info-body table td {
+    padding: 10px; /* Spazio interno */
+    font-size: 1em; /* Dimensione font */
+}
+
+.info-body .bold {
+    font-weight: bold; /* Grassetto */
+}
+
+/* Stile per il pulsante di conferma */
+.confirm-button {
+    text-align: center; /* Testo centrato */
+    margin-top: 20px; /* Spazio superiore */
+}
+
+.confirm-button .btn-accent {
+    background-color: #800080; /* Colore di sfondo */
+    color: #fff; /* Colore del testo */
+    border: none; /* Nessun bordo */
+    padding: 10px 20px; /* Spazio interno */
+    border-radius: 5px; /* Angoli arrotondati */
+    cursor: pointer; /* Puntatore a mano */
+    font-size: 1em; /* Dimensione font */
+    transition: background-color 0.3s ease; /* Transizione del colore di sfondo */
+}
+
+.confirm-button .btn-accent:hover {
+    background-color: rgba(128, 0, 128, 0.71); /* Colore di sfondo al passaggio del mouse */
+}
+
+/* Media query per schermi fino a 768px */
+@media (max-width: 768px) {
+    .checkout {
+        padding: 15px; /* Padding ridotto */
+    }
+
+    .payment-card, .total-amount {
+        padding: 15px; /* Padding ridotto */
+        margin-bottom: 15px; /* Margine inferiore ridotto */
+    }
+
+    .payment-card-header h3 {
+        font-size: 1.5em; /* Dimensione font ridotta */
+    }
+
+    .field label {
+        font-size: 0.9em; /* Dimensione font ridotta */
+    }
+
+    .payment-long-input, .text-input {
+        padding: 8px; /* Spazio interno ridotto */
+    }
+
+    .row-2-input {
+        flex-direction: column; /* Disposizione in colonna */
+    }
+
+    .confirm-button .btn-accent {
+        padding: 8px 16px; /* Spazio interno ridotto */
+        font-size: 0.9em; /* Dimensione font ridotta */
+    }
+}
+
+/* Media query per schermi fino a 480px */
+@media (max-width: 480px) {
+    .checkout {
+        padding: 10px; /* Spazio interno ridotto */
+    }
+
+    .payment-card, .total-amount {
+        padding: 10px; /* Spazio interno ridotto */
+        margin-bottom: 10px; /* Spazio inferiore ridotto */
+    }
+
+    .payment-card-header {
+        flex-direction: column; /* Disposizione in colonna */
+        align-items: flex-start; /* Allineamento a sinistra */
+    }
+
+    .payment-card-header h3 {
+        font-size: 1.3em; /* Dimensione font ridotta */
+    }
+
+    .payment-card-body {
+        padding: 10px 0; /* Padding superiore/inferiore ridotto */
+    }
+
+    .field {
+        margin-bottom: 10px; /* Margine inferiore ridotto */
+    }
+
+    .field label {
+        font-size: 0.8em; /* Dimensione font ridotta */
+    }
+
+    .payment-long-input, .text-input {
+        padding: 6px; /* Padding ridotto */
+        width: 100%; /* Larghezza completa */
+    }
+
+    .info-body table td {
+        padding: 8px; /* Padding ridotto */
+        font-size: 0.9em; /* Dimensione font ridotta */
+    }
+
+    .confirm-button {
+        margin-top: 15px; /* Margine superiore ridotto */
+    }
+
+    .confirm-button .btn-accent {
+        padding: 6px 12px; /* Padding ridotto */
+        font-size: 0.8em; /* Dimensione font ridotta */
+    }
+}

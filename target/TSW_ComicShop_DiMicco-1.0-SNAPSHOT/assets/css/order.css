@@ -1,0 +1,155 @@
+body, h1, h2, h3, h4, p, table, td, th, button {
+    margin: 0; /* Rimuove il margine predefinito */
+    padding: 0; /* Rimuove il padding predefinito */
+    font-family: Arial, sans-serif; /* Imposta il font generale */
+}
+
+/* Sezione main */
+html, body {
+    height: 100%; /* Assicura che il body e l'html occupino tutta l'altezza disponibile */
+}
+
+body {
+    display: flex; /* Imposta il body come un contenitore flessibile */
+    flex-direction: column; /* Dispone gli elementi in una colonna */
+}
+
+.parent-main {
+    display: flex; /* Usa il layout flexbox */
+    justify-content: space-between; /* Spazia gli elementi in modo uniforme */
+    max-width: 1200px; /* Imposta una larghezza massima */
+    width: 100%; /* Assicura che il contenitore utilizzi tutta la larghezza disponibile */
+    margin: 20px auto; /* Centra il contenitore orizzontalmente con un margine verticale */
+    padding: 20px; /* Aggiunge padding interno */
+    background-color: #f9f9f9; /* Imposta il colore di sfondo */
+    border-radius: 8px; /* Arrotonda gli angoli */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Aggiunge un'ombra */
+    box-sizing: border-box; /* Include padding e bordo nel calcolo della larghezza e altezza */
+    flex: 1; /* Permette al contenitore di espandersi e riempire lo spazio disponibile */
+}
+
+/* Sezione prodotti*/
+.prodotti {
+    flex: 2;
+    margin-right: 20px; /* Aggiunge spazio a destra */
+    box-sizing: border-box; /* Include padding e bordo nel calcolo della larghezza e altezza */
+}
+
+.section-prodotti-header h3 {
+    font-size: 24px; /* Imposta la dimensione del font */
+    margin-bottom: 10px; /* Aggiunge spazio sotto il titolo */
+    border-bottom: 2px solid #800080; /* Aggiunge una linea sotto il titolo */
+    padding-bottom: 5px; /* Aggiunge padding sotto il titolo */
+}
+
+/* Tabella */
+.prodotti-table, table {
+    width: 100%; /* Imposta la larghezza al 100% del contenitore */
+    border-collapse: collapse; /* Rimuove gli spazi tra i bordi delle celle */
+}
+
+.prodotti-table thead {
+    background-color: #800080; /* Imposta il colore di sfondo dell'intestazione */
+    color: #fff; /* Imposta il colore del testo a bianco */
+}
+
+.prodotti-table th, table th, table td {
+    padding: 10px; /* Aggiunge padding interno */
+    text-align: left; /* Allinea il testo a sinistra */
+    border-bottom: 1px solid #ddd; /* Aggiunge un bordo inferiore */
+}
+
+.prodotti-table td, table td {
+    vertical-align: top; /* Allinea il contenuto verticalmente in alto */
+}
+
+.paragraph {
+    font-size: 14px; /* Imposta la dimensione del font */
+    color: #666; /* Imposta il colore del testo */
+}
+
+.paragraph.bold {
+    font-weight: bold; /* Imposta il testo in grassetto */
+}
+
+a {
+    color: #800080; /* Imposta il colore del link */
+    text-decoration: none; /* Rimuove la sottolineatura */
+}
+
+a:hover {
+    text-decoration: underline; /* Aggiunge una sottolineatura al passaggio del mouse */
+}
+
+/* Payment section styling */
+.sezione-destra {
+    flex: 1; /* Fa sì che questa sezione occupi meno spazio rispetto all'altra sezione */
+    box-sizing: border-box; /* Include padding e bordo nel calcolo della larghezza e altezza */
+}
+
+.pagamento, .info {
+    margin-bottom: 20px; /* Aggiunge spazio sotto la sezione */
+}
+
+.pagamento table, .info table {
+    width: 100%; /* Imposta la larghezza al 100% del contenitore */
+    border-collapse: collapse; /* Rimuove gli spazi tra i bordi delle celle */
+}
+
+.pagamento td, .info td {
+    padding: 10px; /* Aggiunge padding interno */
+    border-bottom: 1px solid #ddd; /* Aggiunge un bordo inferiore */
+}
+
+.pagamento td:first-child, .info td:first-child {
+    font-weight: bold; /* Imposta il testo in grassetto per la prima colonna */
+}
+
+.info table {
+    border-top: 2px solid #800080; /* Aggiunge una linea sopra la tabella */
+}
+
+.total, .info {
+    margin-top: 20px; /* Aggiunge spazio sopra la sezione */
+}
+
+.total p {
+    margin: 5px 0; /* Aggiunge margine verticale */
+}
+
+.subtotale, .iva, .totale {
+    font-weight: bold; /* Imposta il testo in grassetto */
+}
+
+/* Media query per dispositivi con una larghezza massima di 768px */
+@media (max-width: 768px) {
+    .parent-main {
+        flex-direction: column; /* Dispone gli elementi in una colonna */
+        align-items: center; /* Centra gli elementi orizzontalmente */
+        padding: 10px; /* Riduce il padding */
+    }
+
+    .prodotti {
+        margin-right: 0; /* Rimuove il margine destro */
+        margin-bottom: 20px; /* Aggiunge margine inferiore */
+    }
+
+    .section-prodotti-header h3 {
+        font-size: 20px; /* Riduce la dimensione del font */
+    }
+
+    .pagamento td, .info td {
+        font-size: 14px; /* Riduce la dimensione del font */
+    }
+}
+
+/* Media query per dispositivi con una larghezza massima di 480px */
+@media (max-width: 480px) {
+    .section-prodotti-header h3 {
+        font-size: 18px; /* Riduce ulteriormente la dimensione del font */
+    }
+
+    .pagamento td, .info td {
+        font-size: 12px; /* Riduce ulteriormente la dimensione del font */
+    }
+}

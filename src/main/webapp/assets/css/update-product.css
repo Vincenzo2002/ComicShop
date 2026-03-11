@@ -1,0 +1,135 @@
+/* Reset di base */
+body {
+    margin: 0; /* Rimuove il margine di default */
+    padding: 0; /* Rimuove il padding di default */
+    font-family: Arial, sans-serif; /* Imposta il font di base */
+    box-sizing: border-box; /* Include il padding e il bordo nella larghezza totale */
+}
+
+/* Contenitore principale */
+.container {
+    width: 90%; /* Imposta la larghezza del contenitore */
+    max-width: 1200px; /* Imposta la larghezza massima del contenitore */
+    margin: 20px auto; /* Centra il contenitore e aggiunge margine superiore/inferiore destra/sinistra */
+    padding: 20px; /* Aggiunge padding interno */
+}
+
+/* Stile del modulo */
+form {
+    display: flex; /* Utilizza il flexbox layout */
+    flex-direction: column; /* Dispone gli elementi in colonna */
+    gap: 20px; /* Spazio tra gli elementi */
+}
+
+/* Layout a due righe per gli input */
+.two-row-input {
+    display: flex; /* Utilizza il flexbox layout */
+    flex-wrap: wrap; /* Permette il wrapping degli elementi di andare su piu righe */
+    gap: 20px; /* Spazio tra gli elementi */
+}
+
+/* Stile per gli input */
+.input {
+    flex: 1; /* Gli elementi si espandono per riempire lo spazio disponibile */
+    min-width: 200px; /* Impedisce che i campi diventino troppo piccoli su schermi piccoli */
+}
+
+.input label {
+    display: block; /* Mostra il label come blocco */
+    margin-bottom: 5px; /* Margine inferiore */
+    font-weight: bold; /* Testo in grassetto */
+}
+
+.input input, .input select, textarea {
+    width: 100%; /* Larghezza completa */
+    padding: 10px; /* Padding interno */
+    margin-top: 5px; /* Margine superiore */
+    border: 1px solid #ddd; /* Bordo */
+    border-radius: 5px; /* Angoli arrotondati */
+    box-sizing: border-box; /* Include padding e bordo nella larghezza totale */
+}
+
+textarea {
+    resize: vertical; /* Permette il ridimensionamento verticale */
+}
+
+/* Stile per la selezione della categoria */
+#category {
+    background-color: #fff; /* Colore di sfondo */
+    border: 1px solid #ddd; /* Bordo */
+    border-radius: 5px; /* Angoli arrotondati */
+}
+
+/* Stile per l'immagine del prodotto */
+.img-choice-container {
+    text-align: center; /* Centra il testo e l'immagine */
+}
+
+.img-choice-container img {
+    max-width: 100%; /* Larghezza massima dell'immagine */
+    height: auto; /* Altezza automatica per mantenere le proporzioni */
+    border: 1px solid #ddd; /* Bordo */
+    border-radius: 5px; /* Angoli arrotondati */
+    margin-bottom: 10px; /* Margine inferiore */
+}
+
+/* Stile per il pulsante di submit */
+input[type="submit"] {
+    background-color: #800080; /* Colore di sfondo */
+    color: #fff; /* Colore del testo */
+    padding: 10px 20px; /* Padding interno */
+    border: none; /* Rimuove il bordo */
+    border-radius: 5px; /* Angoli arrotondati */
+    cursor: pointer; /* Cambia il cursore al passaggio */
+    font-size: 16px; /* Dimensione del font */
+    transition: background-color 0.3s; /* Transizione del colore di sfondo */
+}
+
+input[type="submit"]:hover {
+    background-color: #5a005a; /* Colore di sfondo al passaggio */
+}
+
+/* Stile per gli input file */
+input[type="file"] {
+    display: block; /* Mostra come blocco */
+    margin-top: 10px; /* Margine superiore */
+}
+
+/* Adatta il layout per dispositivi mobili */
+@media (max-width: 768px) {
+    .two-row-input {
+        flex-direction: column; /* Dispone gli elementi in colonna */
+    }
+
+    .input {
+        margin-bottom: 20px; /* Margine inferiore */
+    }
+}
+
+/* Adatta il layout per dispositivi mobili */
+@media (max-width: 480px) {
+    .container {
+        padding: 5px; /* Ulteriore riduzione del padding per schermi molto piccoli */
+    }
+
+    .form {
+        padding: 10px; /* Ridotto per adattarsi agli schermi più piccoli */
+    }
+
+    .two-row-input {
+        flex-direction: column; /* Imposta la colonna per schermi molto piccoli */
+    }
+
+    .input {
+        margin-bottom: 15px; /* Ridotto per schermi più piccoli */
+    }
+
+    .input input, .input select, textarea {
+        padding: 6px; /* Ulteriore riduzione del padding per schermi molto piccoli */
+    }
+
+    input[type="submit"] {
+        font-size: 12px; /* Ulteriore riduzione della dimensione del font */
+        padding: 8px; /* Ridotto per schermi molto piccoli */
+    }
+}

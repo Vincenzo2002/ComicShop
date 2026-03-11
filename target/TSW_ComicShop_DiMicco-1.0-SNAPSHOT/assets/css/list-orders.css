@@ -1,0 +1,188 @@
+/* Reset di alcuni stili predefiniti */
+* {
+    margin: 0; /* Rimuove tutti i margini predefiniti */
+    padding: 0; /* Rimuove tutti i padding predefiniti */
+    box-sizing: border-box; /* Include il padding e il bordo nel calcolo della dimensione degli elementi */
+}
+
+html, body {
+    width: 100%; /* Imposta la larghezza al 100% della finestra */
+    height: 100%; /* Imposta l'altezza al 100% della finestra */
+    margin: 0; /* Rimuove i margini */
+    padding: 0; /* Rimuove i padding */
+    overflow-x: hidden; /* Evita lo scrolling orizzontale */
+}
+
+/* Contenitore Principale */
+.container {
+    display: flex; /* Utilizza il layout flexbox */
+    flex-direction: row; /* Dispone gli elementi in una riga */
+    height: 100vh; /* Assicura che il contenitore principale occupi l'intera altezza della finestra */
+    margin-top: 0; /* Rimuove il margine superiore */
+}
+
+.sidebar {
+    width: 200px; /* Imposta la larghezza della sidebar */
+    background-color: #f8f8f8; /* Imposta il colore di sfondo della sidebar */
+    padding: 15px; /* Aggiunge padding interno alla sidebar */
+    border-right: 1px solid #ddd; /* Aggiunge un bordo destro */
+}
+
+.sidebar ul {
+    list-style-type: none; /* Rimuove i punti elenco */
+    padding: 0; /* Rimuove il padding */
+}
+
+.sidebar ul li {
+    margin-bottom: 10px; /* Aggiunge margine inferiore agli elementi della lista */
+}
+
+.sidebar ul li a {
+    text-decoration: none; /* Rimuove la sottolineatura dai link */
+    color: #333; /* Imposta il colore del testo dei link */
+    font-weight: normal; /* Imposta il peso del font a normale */
+}
+
+.main-container {
+    flex-grow: 1; /* Fa sì che il contenitore principale occupi tutto lo spazio rimanente */
+    padding: 20px; /* Aggiunge padding interno */
+    overflow-y: auto; /* Permette lo scrolling verticale se il contenuto è troppo alto */
+}
+
+.table-heading {
+    display: flex; /* Utilizza il layout flexbox */
+    justify-content: center; /* Centra gli elementi orizzontalmente */
+    align-items: center; /* Centra gli elementi verticalmente */
+    margin-bottom: 20px; /* Aggiunge margine inferiore */
+    text-align: center; /* Centra il testo */
+    width: 100%; /* Imposta la larghezza al 100% del contenitore */
+}
+
+.table-heading h3 {
+    margin: 0; /* Rimuove il margine */
+    font-weight: normal; /* Imposta il peso del font a normale */
+}
+
+.no-orders {
+    text-align: center; /* Centra il testo */
+    font-size: 1.2em; /* Imposta la dimensione del font */
+    color: #555; /* Imposta il colore del testo */
+}
+
+table {
+    width: 100%; /* Imposta la larghezza al 100% del contenitore */
+    border-collapse: collapse; /* Rimuove gli spazi tra i bordi delle celle */
+    margin-top: 20px; /* Aggiunge margine superiore */
+}
+
+table tr {
+    border-bottom: 1px solid #ddd; /* Aggiunge un bordo inferiore alle righe della tabella */
+}
+
+table td {
+    padding: 10px; /* Aggiunge padding interno alle celle */
+}
+
+.paragraph {
+    margin: 5px 0; /* Aggiunge margine verticale */
+}
+
+.bold {
+    font-weight: bold; /* Imposta il testo in grassetto */
+}
+
+.details {
+    display: inline-block; /* Mostra come elemento in linea a blocco */
+    margin-top: 10px; /* Aggiunge margine superiore */
+    padding: 8px 12px; /* Aggiunge padding interno */
+    background-color: rgba(128, 0, 128, 0.71); /* Imposta il colore di sfondo */
+    color: #fff; /* Imposta il colore del testo a bianco */
+    text-decoration: none; /* Rimuove la sottolineatura */
+    border-radius: 4px; /* Arrotonda gli angoli */
+}
+
+.details:hover {
+    background-color: #800080; /* Cambia il colore di sfondo al passaggio del mouse */
+}
+
+/* Media query per dispositivi con una larghezza massima di 480px */
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column; /* Dispone gli elementi in una colonna */
+        height: auto; /* Adatta l'altezza per schermi più piccoli */
+    }
+
+    .sidebar {
+        width: 100%; /* Imposta la larghezza al 100% del contenitore */
+        padding: 10px; /* Riduce il padding */
+        border-right: none; /* Rimuove il bordo destro */
+        border-bottom: 1px solid #ddd; /* Aggiunge un bordo inferiore */
+    }
+
+    .sidebar ul li {
+        margin-bottom: 8px; /* Riduce il margine inferiore */
+    }
+
+    .sidebar ul li a {
+        font-size: 0.9em; /* Riduce la dimensione del font */
+    }
+
+    .main-container {
+        padding: 15px; /* Riduce il padding */
+    }
+
+    .table-heading {
+        flex-direction: column; /* Dispone gli elementi in una colonna */
+        margin-bottom: 15px; /* Riduce il margine inferiore */
+    }
+
+    .table-heading h3 {
+        font-size: 1.2em; /* Riduce la dimensione del font */
+    }
+
+    .no-orders {
+        font-size: 1em; /* Riduce la dimensione del font */
+    }
+
+    table {
+        margin-top: 15px; /* Riduce il margine superiore */
+    }
+
+    table tr {
+        display: block; /* Mostra le righe come blocchi */
+        margin-bottom: 15px; /* Aggiunge margine inferiore */
+        border-bottom: 1px solid #ddd; /* Assicura che il bordo inferiore sia visibile */
+    }
+
+    table td {
+        display: block; /* Mostra le celle come blocchi */
+        padding: 8px; /* Riduce il padding */
+        font-size: 0.9em; /* Riduce la dimensione del font */
+    }
+
+    .details {
+        padding: 6px 10px; /* Riduce il padding */
+        font-size: 0.9em; /* Riduce la dimensione del font */
+    }
+}
+
+/* Media query per dispositivi di larghezza massima 768px */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Dispone gli elementi in una colonna */
+    }
+
+    .sidebar {
+        width: 100%; /* Imposta la larghezza al 100% del contenitore */
+        box-shadow: none; /* Rimuove l'ombra */
+    }
+
+    table tr {
+        display: block; /* Mostra le righe come blocchi */
+        margin-bottom: 20px; /* Aggiunge margine inferiore */
+    }
+
+    table td {
+        display: block; /* Mostra le celle come blocchi */
+    }
+}

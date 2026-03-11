@@ -1,0 +1,118 @@
+/* Stili Globali */
+body {
+    font-family: Arial, sans-serif; /* Imposta il font di base */
+    background-color: #f4f4f4; /* Imposta il colore di sfondo */
+    margin: 0; /* Rimuove il margine di default */
+    padding: 0; /* Rimuove il padding di default */
+}
+
+h2 {
+    color: #333; /* Colore del testo */
+    margin-bottom: 20px; /* Margine inferiore */
+}
+
+.container {
+    width: 80%; /* Larghezza del contenitore */
+    max-width: 1200px; /* Larghezza massima del contenitore */
+    margin: 0 auto; /* Centra il contenitore orizzontalmente */
+    padding: 20px; /* Padding interno */
+    display: flex; /* Utilizza il flexbox layout */
+    flex-wrap: wrap; /* Permette il wrapping degli elementi */
+    justify-content: space-between; /* Spazio tra gli elementi */
+}
+
+.error-message {
+    background-color: #f8d7da; /* Colore di sfondo dell'errore */
+    color: #721c24; /* Colore del testo dell'errore */
+    border: 1px solid #f5c6cb; /* Bordo dell'errore */
+    border-radius: 5px; /* Angoli arrotondati */
+    padding: 10px; /* Padding interno */
+    margin-bottom: 20px; /* Margine inferiore */
+    width: 100%; /* Larghezza completa */
+}
+
+/* Stili del Modulo */
+.form-container {
+    background-color: #fff; /* Colore di sfondo del modulo */
+    padding: 20px; /* Padding interno */
+    border-radius: 5px; /* Angoli arrotondati */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombra del box */
+    margin-bottom: 20px; /* Margine inferiore */
+    flex: 1 1 45%; /* Flessione e larghezza */
+    box-sizing: border-box; /* Include padding e bordo nella larghezza totale */
+    margin-right: 20px; /* Aggiunge margine tra i campi */
+}
+
+.form-container:last-child {
+    margin-right: 0; /* Rimuove il margine dall'ultimo elemento */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Margine inferiore del gruppo */
+}
+
+.form-group label {
+    display: block; /* Mostra il label come blocco */
+    margin-bottom: 5px; /* Margine inferiore */
+    font-weight: bold; /* Testo in grassetto */
+    color: #333; /* Colore del testo */
+}
+
+.form-group input {
+    width: 100%; /* Larghezza completa */
+    padding: 10px; /* Padding interno */
+    border: 1px solid #ccc; /* Bordo */
+    border-radius: 5px; /* Angoli arrotondati */
+    box-sizing: border-box; /* Include padding e bordo nella larghezza totale */
+}
+
+.form-group button {
+    width: 100%; /* Larghezza completa */
+    padding: 10px; /* Padding interno */
+    background-color: rgb(128, 0, 128); /* Colore di sfondo del bottone */
+    border: none; /* Rimuove il bordo */
+    border-radius: 5px; /* Angoli arrotondati */
+    color: #fff; /* Colore del testo */
+    font-weight: bold; /* Testo in grassetto */
+    cursor: pointer; /* Cambia il cursore al passaggio */
+}
+
+.form-group button:hover {
+    background-color: rgba(128, 0, 128, 0.71); /* Colore di sfondo al passaggio */
+}
+
+/* Stili del Messaggio di Errore */
+#error-message {
+    color: red; /* Colore del testo del messaggio di errore */
+}
+
+/* Dispositivi con una larghezza di 768px */
+@media (max-width: 768px) {
+    .container {
+        width: 95%; /* Aumenta la larghezza del contenitore */
+        flex-direction: column; /* Dispone gli elementi in colonna */
+        align-items: center; /* Centra gli elementi */
+    }
+
+    .form-container {
+        width: 100%; /* Larghezza completa */
+        margin-right: 0; /* Rimuove il margine sugli schermi più piccoli */
+    }
+}
+
+/* Dispositivi con una larghezza di 480px */
+@media (max-width: 480px) {
+    .form-group input,
+    .form-group button {
+        padding: 8px; /* Riduce il padding */
+        font-size: 14px; /* Riduce la dimensione del font */
+    }
+
+    .form-group label {
+        font-size: 14px; /* Riduce la dimensione del font */
+    }
+
+    .container {
+        padding: 10px; /* Riduce il padding del contenitore */
+    }
+}

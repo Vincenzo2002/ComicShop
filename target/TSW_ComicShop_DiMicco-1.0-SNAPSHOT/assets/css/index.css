@@ -1,0 +1,114 @@
+/* Stili per il body e l'html */
+body, html {
+    margin: 0; /* Rimuove i margini predefiniti */
+    padding: 0; /* Rimuove i padding predefiniti */
+    font-family: Arial, sans-serif; /* Imposta il font predefinito */
+    line-height: 1.6; /* Imposta l'altezza della linea per una buona leggibilità */
+    background-color: #f5f5f5; /* Imposta il colore di sfondo */
+}
+
+/* Stili per il banner */
+.banner {
+    width: 100%; /* Il banner occupa tutta la larghezza disponibile */
+    overflow: hidden; /* Nasconde il contenuto che esce dai bordi */
+    margin: 0 auto; /* Centra il banner orizzontalmente */
+}
+
+.banner img {
+    width: 100%; /* L'immagine del banner occupa tutta la larghezza disponibile */
+    display: block; /* Rimuove lo spazio inferiore sotto l'immagine */
+    height: auto; /* Mantiene l'aspetto proporzionato dell'immagine */
+}
+
+/* Stili per il contenuto principale */
+.main-content {
+    display: flex; /* Usa Flexbox per il layout dei bambini */
+    justify-content: center; /* Centra orizzontalmente il contenuto */
+    align-items: center; /* Centra verticalmente*/
+    margin: 20px auto; /* Margini uniformi per centrare il contenuto */
+    flex-wrap: wrap; /* Consente di andare su più righe */
+    max-width: 1200px; /* Limita la larghezza massima del contenuto principale */
+    padding: 0 20px; /* Aggiunge un padding orizzontale per evitare che il contenuto tocchi i bordi */
+}
+
+/* Stili per le sezioni di categoria */
+.section {
+    position: relative; /* Necessario per posizionare il testo sovrapposto */
+    width: 100%; /* Adatta la sezione alla larghezza del contenitore */
+    max-width: 300px; /* Imposta una larghezza massima */
+    height: 200px; /* Imposta un'altezza fissa */
+    margin: 10px; /* Aggiunge spazio tra le sezioni */
+    overflow: hidden; /* Nasconde il contenuto che esce dai bordi */
+    border-radius: 5px; /* Aggiunge angoli arrotondati */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Aggiunge un'ombra per dare profondità */
+    transition: transform 0.3s ease; /* Aggiunge una transizione per l'effetto hover */
+    background-color: #fff; /* Sfondo bianco per migliorare la visibilità */
+}
+
+.section:hover {
+    transform: translateY(-5px); /* Solleva leggermente la sezione al passaggio del mouse */
+}
+
+.section img {
+    width: 100%; /* L'immagine copre tutta la larghezza della sezione */
+    height: 100%; /* L'immagine copre tutta l'altezza della sezione */
+    object-fit: cover; /* Assicura che l'immagine copra tutta la sezione mantenendo le proporzioni */
+}
+
+/* Stili per il testo sovrapposto */
+.overlay-text {
+    position: absolute; /* Posiziona il testo rispetto al contenitore padre */
+    bottom: 0; /* Posiziona il testo nella parte inferiore della sezione */
+    left: 0; /* Allinea il testo a sinistra */
+    width: 100%; /* Il testo occupa tutta la larghezza della sezione */
+    background-color: rgb(128, 0, 128, 0.6); /* Sfondo rosso trasparente */
+    color: #fff; /* Colore del testo bianco */
+    text-align: center; /* Allinea il testo al centro */
+    padding: 10px; /* Aggiunge padding interno */
+    font-size: 18px; /* Imposta la dimensione del font */
+    box-sizing: border-box; /* Per includere padding nelle dimensioni totali */
+}
+
+.overlay-text:hover {
+    background-color: rgb(128, 0, 128, 0.8); /* Sfondo rosso più scuro trasparente al passaggio del mouse */
+}
+
+/* Stili per dispositivi di larghezza massima 768px */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column; /* Dispone le sezioni in una colonna */
+        align-items: center; /* Centra le sezioni orizzontalmente */
+        padding: 0 10px; /* Riduce il padding per schermi più piccoli */
+    }
+
+    .section {
+        width: 100%; /* La sezione occupa tutta la larghezza disponibile */
+        max-width: 400px; /* Larghezza massima per dispositivi mobili */
+    }
+}
+
+/* Media query per dispositivi di larghezza massima 480px */
+@media (max-width: 480px) {
+    .banner {
+        margin: 0; /* Rimuove il margine per fare in modo che il banner occupi tutta la larghezza */
+    }
+
+    .main-content {
+        flex-direction: column; /* Dispone le sezioni in una colonna */
+        align-items: center; /* Centra le sezioni orizzontalmente */
+        padding: 0 5px; /* Riduce ulteriormente il padding per schermi più piccoli */
+    }
+
+    .section {
+        width: 100%; /* La sezione occupa tutta la larghezza disponibile */
+        max-width: 100%; /* Larghezza massima per dispositivi mobili */
+        height: 150px; /* Riduce l'altezza delle sezioni */
+    }
+
+    .overlay-text {
+        font-size: 16px; /* Riduce la dimensione del font per adattarsi a schermi più piccoli */
+        padding: 8px; /* Riduce il padding per migliorare la leggibilità */
+    }
+}
+
+

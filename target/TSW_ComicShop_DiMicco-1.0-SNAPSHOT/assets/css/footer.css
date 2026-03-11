@@ -1,0 +1,180 @@
+.footer {
+    background-color: #000; /* Imposta il colore di sfondo a nero */
+    color: #fff; /* Imposta il colore del testo a bianco */
+    padding: 20px 0; /* Aggiunge padding superiore/inferiore */
+    font-size: 14px; /* Imposta la dimensione del testo a 14px */
+    text-align: center; /* Allinea il testo al centro */
+}
+
+/* Stili per la sezione superiore del footer */
+.footer-top {
+    display: flex; /* Utilizza il layout flexbox */
+    justify-content: space-between; /* Distribuisce lo spazio tra gli elementi */
+    align-items: center; /* Allinea gli elementi al centro verticalmente */
+    flex-wrap: wrap; /* Consente il wrapping degli elementi */
+    padding: 0 20px; /* Aggiunge padding sinistro e destro */
+}
+
+.footer-top .logo img {
+    max-width: 100%; /* Imposta la larghezza massima al 100% del contenitore */
+    height: auto; /* Mantiene le proporzioni dell'immagine */
+}
+
+.footer-top .social-media {
+    margin-top: 10px; /* Aggiunge un margine superiore di 10px */
+}
+
+.footer-top .social-media a {
+    display: inline-block; /* Visualizza gli elementi inline-block */
+    margin: 0 10px; /* Aggiunge un margine laterale di 10px */
+}
+
+.footer-top .brands {
+    margin-top: 10px; /* Aggiunge un margine superiore di 10px */
+    display: flex; /* Utilizza il layout flexbox */
+    justify-content: center; /* Centra gli elementi */
+    flex-wrap: wrap; /* Consente il wrapping degli elementi */
+}
+
+.footer-top .brands img {
+    max-width: 80px; /* Imposta la larghezza massima a 80px */
+    height: auto; /* Mantiene le proporzioni dell'immagine */
+    margin: 5px; /* Aggiunge un margine di 5px */
+}
+
+/* Stili per la sezione inferiore del footer */
+.footer-bottom {
+    display: flex; /* Utilizza il layout flexbox */
+    justify-content: space-between; /* Distribuisce lo spazio tra gli elementi */
+    align-items: center; /* Allinea gli elementi al centro verticalmente */
+    margin-top: 20px; /* Aggiunge un margine superiore di 20px */
+    border-top: 1px solid #666; /* Aggiunge un bordo superiore */
+    padding: 10px 20px; /* Aggiunge padding sinistro e destro */
+}
+
+.footer-bottom .footer-links {
+    display: flex; /* Utilizza il layout flexbox */
+    align-items: center; /* Allinea gli elementi al centro verticalmente */
+}
+
+.footer-bottom .footer-links a {
+    color: #fff; /* Imposta il colore del testo a bianco */
+    text-decoration: none; /* Rimuove la sottolineatura del link */
+    margin-right: 20px; /* Aggiunge un margine destro di 20px */
+    display: flex; /* Utilizza il layout flexbox */
+    align-items: center; /* Allinea gli elementi al centro verticalmente */
+}
+
+.footer-bottom .footer-links a img {
+    margin-right: 5px; /* Aggiunge un margine destro di 5px */
+}
+
+.footer-bottom .copyright {
+    font-size: 12px; /* Imposta la dimensione del testo a 12px */
+    margin-top: 10px; /* Aggiunge un margine superiore di 10px */
+}
+
+/* Modifiche per utilizzare colori bianco, rosso e nero */
+.footer-top .social-media a img,
+.footer-bottom .footer-links a img {
+    filter: invert(1); /* Inverte i colori per immagini con sfondo bianco */
+    transition: filter 0.3s ease; /* Aggiunge una transizione di 0.3s per l'inversione dei colori */
+}
+
+.footer-top .social-media a:hover img,
+.footer-bottom .footer-links a:hover img {
+    filter: invert(50%) sepia(1) saturate(5) hue-rotate(330deg); /* Trasforma il bianco in rosso al passaggio del mouse */
+}
+
+/* Media query per dispositivi di larghezza massima 768px */
+@media (max-width: 768px) {
+    .footer-top {
+        flex-direction: column; /* Dispone gli elementi in colonna */
+        text-align: center; /* Allinea il testo al centro */
+    }
+
+    .footer-top .brands {
+        justify-content: center; /* Centra gli elementi */
+    }
+
+    .footer-top .brands img {
+        max-width: 60px; /* Imposta la larghezza massima a 60px */
+        margin: 5px; /* Aggiunge un margine di 5px */
+    }
+
+    .footer-bottom {
+        flex-direction: column; /* Dispone gli elementi in colonna */
+        text-align: center; /* Allinea il testo al centro */
+    }
+
+    .footer-bottom .footer-links {
+        margin-bottom: 10px; /* Aggiunge un margine inferiore di 10px */
+    }
+}
+
+/* Media query per dispositivi di larghezza massima 480px */
+@media (max-width: 480px) {
+    .footer {
+        font-size: 12px; /* Riduce la dimensione del testo a 12px */
+        padding: 15px 0; /* Riduce il padding sopra e sotto */
+    }
+
+    .footer-top {
+        flex-direction: column; /* Dispone gli elementi in colonna */
+        align-items: center; /* Allinea gli elementi al centro */
+        padding: 0 10px; /* Riduce il padding sinistro e destro */
+    }
+
+    .footer-top .logo img {
+        max-width: 80%; /* Riduce la larghezza massima dell'immagine del logo */
+    }
+
+    .footer-top .social-media {
+        margin-top: 10px; /* Aggiunge un margine superiore di 10px */
+        display: flex; /* Utilizza il layout flexbox */
+        justify-content: center; /* Centra gli elementi */
+        flex-wrap: wrap; /* Consente il wrapping degli elementi */
+    }
+
+    .footer-top .social-media a {
+        margin: 5px; /* Aggiunge un margine di 5px */
+    }
+
+    .footer-top .brands {
+        margin-top: 10px; /* Aggiunge un margine superiore di 10px */
+        justify-content: center; /* Centra gli elementi */
+    }
+
+    .footer-top .brands img {
+        max-width: 50px; /* Imposta la larghezza massima a 50px */
+        margin: 5px; /* Aggiunge un margine di 5px */
+    }
+
+    .footer-bottom {
+        flex-direction: column; /* Dispone gli elementi in colonna */
+        align-items: center; /* Allinea gli elementi al centro */
+        text-align: center; /* Allinea il testo al centro */
+        margin-top: 15px; /* Riduce il margine superiore */
+        padding: 10px 10px; /* Riduce il padding sinistro e destro */
+    }
+
+    .footer-bottom .footer-links {
+        flex-direction: column; /* Dispone gli elementi in colonna */
+        align-items: center; /* Allinea gli elementi al centro */
+        margin-bottom: 10px; /* Aggiunge un margine inferiore di 10px */
+    }
+
+    .footer-bottom .footer-links a {
+        margin-right: 0; /* Rimuove il margine destro */
+        margin-bottom: 5px; /* Aggiunge un margine inferiore di 5px */
+    }
+
+    .footer-bottom .footer-links a:last-child {
+        margin-bottom: 0; /* Rimuove il margine inferiore dall'ultimo link */
+    }
+
+    .footer-bottom .copyright {
+        margin-top: 5px; /* Riduce il margine superiore */
+        font-size: 10px; /* Riduce la dimensione del testo a 10px */
+    }
+}

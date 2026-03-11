@@ -1,0 +1,193 @@
+/* Rimuovere margini e padding predefiniti del body */
+body {
+    margin: 0; /* Rimuove il margine predefinito */
+    padding: 0; /* Rimuove il padding predefinito */
+    display: flex; /* Usa il layout flex per il body */
+    flex-direction: column; /* Dispone gli elementi in colonna */
+    min-height: 100vh; /* Assicura che il body occupi almeno l'altezza della finestra */
+}
+
+/* Stile generale del carrello */
+.cart {
+    max-width: 1200px; /* Larghezza massima del carrello */
+    width: 100%; /* Assicura che il carrello occupi tutta la larghezza disponibile */
+    margin: 0 auto; /* Centra il carrello orizzontalmente */
+    padding: 20px; /* Padding interno del carrello */
+    background-color: #f9f9f9; /* Colore di sfondo del carrello */
+    border-radius: 8px; /* Angoli arrotondati del carrello */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Aggiunge un'ombra al carrello */
+    flex: 1; /* Permette al carrello di espandersi e riempire lo spazio disponibile */
+}
+
+/* Intestazione del carrello */
+.cart-header {
+    display: flex; /* Dispone gli elementi in linea */
+    justify-content: space-between; /* Distribuisce lo spazio tra gli elementi */
+    align-items: center; /* Allinea gli elementi al centro verticalmente */
+    margin-bottom: 20px; /* Spazio inferiore dell'intestazione */
+    padding-bottom: 10px; /* Padding inferiore dell'intestazione */
+    border-bottom: 1px solid #ddd; /* Bordo inferiore dell'intestazione */
+}
+
+.cart-header h2 {
+    font-size: 24px; /* Dimensione del font dell'intestazione */
+    font-weight: bold; /* Font in grassetto per l'intestazione */
+}
+
+/* Bottone */
+.btn-accent {
+    background-color: rgba(128, 0, 128, 0.71); /* Colore di sfondo del pulsante */
+    color: #fff; /* Colore del testo del pulsante */
+    border: none; /* Rimuove il bordo predefinito */
+    padding: 10px 20px; /* Padding interno del pulsante */
+    font-size: 16px; /* Dimensione del font del pulsante */
+    cursor: pointer; /* Cambia il cursore al passaggio del mouse */
+    border-radius: 4px; /* Angoli arrotondati del pulsante */
+    transition: background-color 0.3s ease; /* Aggiunge una transizione al cambio di colore */
+}
+
+.btn-accent:hover {
+    background-color: rgba(128, 0, 128, 0.91); /* Colore di sfondo più scuro al passaggio del mouse */
+}
+
+/* Pulsante di navigazione */
+.nav-button {
+    display: inline-flex; /* Dispone gli elementi in linea con flexbox */
+    align-items: center; /* Allinea gli elementi al centro verticalmente */
+}
+
+/* Riga prodotto */
+.product-row {
+    display: flex; /* Dispone gli elementi in linea con il flexbox */
+    justify-content: space-between; /* Distribuisce lo spazio tra gli elementi */
+    padding: 10px; /* Padding interno della riga prodotto */
+    border-bottom: 1px solid #ddd; /* Bordo inferiore della riga prodotto */
+    background-color: #fff; /* Colore di sfondo della riga prodotto */
+    border-radius: 4px; /* Angoli arrotondati della riga prodotto */
+    margin-bottom: 10px; /* Spazio inferiore tra le righe prodotto */
+    width: 100%; /* Assicura che la riga prodotto occupi tutta la larghezza disponibile */
+}
+
+/* Informazioni prodotto */
+.product-info {
+    flex: 2;
+}
+
+.product-info h4 {
+    margin: 0; /* Rimuove il margine del titolo del prodotto */
+    font-size: 18px; /* Dimensione del font del titolo del prodotto */
+}
+
+/* Contenitore quantità e prezzo */
+.qprice {
+    display: flex; /* Dispone gli elementi in linea con il flexbox */
+    align-items: center; /* Allinea gli elementi al centro verticalmente */
+}
+
+.text-input {
+    padding: 5px; /* Padding interno dell'input di testo */
+    font-size: 14px; /* Dimensione del font dell'input di testo */
+    border: 1px solid #ddd; /* Bordo dell'input di testo */
+    border-radius: 4px; /* Angoli arrotondati dell'input di testo */
+    width: 60px; /* Larghezza dell'input di testo */
+}
+
+.sing-price {
+    margin-left: 10px; /* Spazio a sinistra tra quantità e prezzo */
+}
+
+/* Prezzo prodotto */
+.product-price {
+    flex: 1; /* Occupa una unità di spazio */
+    text-align: right; /* Allinea il testo a destra */
+}
+
+.product-price h4 {
+    margin: 0; /* Rimuove il margine del prezzo del prodotto */
+    font-size: 18px; /* Dimensione del font del prezzo del prodotto */
+    color: #800080; /* Colore del testo del prezzo del prodotto */
+}
+
+/* Pulsante di eliminazione */
+.del-button {
+    background-color: #dc3545; /* Colore di sfondo del pulsante di eliminazione */
+    color: #fff; /* Colore del testo del pulsante di eliminazione */
+    border: none; /* Rimuove il bordo predefinito */
+    padding: 5px 10px; /* Padding interno del pulsante di eliminazione */
+    font-size: 16px; /* Dimensione del font del pulsante di eliminazione */
+    cursor: pointer; /* Cambia il cursore al passaggio del mouse */
+    border-radius: 4px; /* Angoli arrotondati del pulsante di eliminazione */
+    transition: background-color 0.3s ease; /* Aggiunge una transizione al cambio di colore */
+}
+
+.del-button:hover {
+    background-color: #c82333; /* Colore di sfondo più scuro al passaggio del mouse */
+}
+
+/* Riga totale */
+.totale-row {
+    display: flex; /* Dispone gli elementi in linea con il flexbox */
+    justify-content: space-between; /* Distribuisce lo spazio tra gli elementi */
+    align-items: center; /* Allinea gli elementi al centro verticalmente */
+    padding-top: 10px; /* Padding superiore della riga totale */
+    border-top: 1px solid #ddd; /* Bordo superiore della riga totale */
+}
+
+.total {
+    font-size: 18px; /* Dimensione del font del totale */
+    font-weight: bold; /* Font in grassetto per il totale */
+}
+
+input.text-input {
+    margin-right: 10px; /* Spazio a destra dell'input di testo */
+}
+
+.total p {
+    margin: 0; /* Rimuove il margine del testo del totale */
+}
+
+/* Media query per dispositivi di larghezza massima 768px */
+@media (max-width: 768px) {
+    .product-row {
+        flex-direction: column; /* Dispone gli elementi in colonna */
+        align-items: flex-start; /* Allinea gli elementi all'inizio */
+    }
+
+    .product-price {
+        text-align: left; /* Allinea il testo a sinistra */
+        margin-top: 10px; /* Spazio superiore */
+    }
+
+    .del-button {
+        width: 100%; /* Larghezza completa del pulsante di eliminazione */
+        margin-top: 10px; /* Spazio superiore */
+    }
+
+    .cart-header {
+        flex-direction: column; /* Dispone gli elementi in colonna */
+        align-items: flex-start; /* Allinea gli elementi all'inizio */
+    }
+}
+
+/* Media query per dispositivi di larghezza massima 480px */
+@media (max-width: 480px) {
+    .text-input {
+        width: 100%; /* Larghezza completa dell'input di testo */
+    }
+
+    .cart {
+        padding: 10px; /* Riduce il padding per adattarsi agli schermi più piccoli */
+    }
+
+    .product-info h4 {
+        font-size: 16px; /* Dimensione del font ridotta per il titolo del prodotto */
+    }
+
+    .product-price h4 {
+        font-size: 16px; /* Dimensione del font ridotta per il prezzo del prodotto */
+    }
+
+    .total {
+        font-size: 16px; /* Dimensione del font ridotta per il totale */
+    }
+}

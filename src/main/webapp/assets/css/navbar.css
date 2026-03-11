@@ -1,0 +1,74 @@
+/* Stili per il header e la navbar */
+.header {
+    background-color: #000; /* Colore di sfondo nero */
+    color: #fff; /* Testo bianco */
+    padding: 10px 0; /* Spaziatura interna verticale */
+    display: flex; /* Utilizzo del layout flexbox */
+    justify-content: space-between; /* Spaziatura uniforme tra gli elementi */
+    align-items: center; /* Allineamento verticale al centro */
+}
+
+/* Stili per l'account, il carrello e l'amministratore */
+.navBar-button {
+    display: flex; /* Layout flexbox */
+    align-items: center; /* Allineamento verticale al centro */
+}
+
+.navBar-button a {
+    color: #fff; /* Testo bianco */
+    text-decoration: none; /* Rimuove la sottolineatura del testo */
+    display: flex; /* Layout flexbox */
+    align-items: center; /* Allineamento verticale al centro */
+    margin-left: 10px; /* Margine a sinistra */
+}
+
+.navBar-button a img.icon {
+    width: 30px; /* Larghezza dell'icona */
+    height: 30px; /* Altezza dell'icona */
+    margin-right: 5px; /* Margine a destra */
+}
+
+/* Stili per dispositivi di larghezza massima 768px (tablet e mobile) */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Disposizione degli elementi in colonna */
+        text-align: center; /* Allineamento del testo al centro */
+    }
+
+    .account-cart {
+        margin-top: 10px; /* Margine superiore */
+    }
+
+    .account-cart a {
+        margin-left: 0; /* Rimuove il margine a sinistra */
+        margin-right: 10px; /* Aggiunge il margine a destra */
+    }
+}
+
+/* Media query per dispositivi con larghezza massima di 480px (smartphone) */
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column; /* Disposizione degli elementi in colonna */
+        text-align: center; /* Allineamento del testo al centro */
+        padding: 15px 0; /* Aggiunge padding per migliorare la spaziatura */
+    }
+
+    .account-cart {
+        flex-direction: column; /* Dispone elementi account e carrello in verticale */
+        margin-top: 15px; /* Aggiunge margine superiore per la spaziatura */
+    }
+
+    .account-cart a {
+        margin-left: 0; /* Rimuove il margine a sinistra */
+        margin-right: 0; /* Rimuove il margine a destra */
+        margin-bottom: 10px; /* Aggiunge margine inferiore per la spaziatura */
+        display: flex; /* Utilizza il layout flexbox */
+        justify-content: center; /* Allinea gli elementi al centro */
+        width: 90%; /* Larghezza adattata */
+    }
+
+    .account-cart a img.icon {
+        width: 25px; /* Riduce la larghezza dell'icona */
+        height: 25px; /* Riduce l'altezza dell'icona */
+    }
+}
