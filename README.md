@@ -21,7 +21,6 @@ L’applicazione implementa le principali funzionalità di un sistema e-commerce
 - Gestione degli ordini
   - Visualizzazione degli ordini per data
   - Ricerca degli ordini per cliente
-- Gestione dei codici coupon
 
 ### Funzionalità utente registrato
 
@@ -29,9 +28,7 @@ L’applicazione implementa le principali funzionalità di un sistema e-commerce
 - Completare un acquisto
 - Ricercare e visualizzare i prodotti
 - Visualizzare la lista degli ordini effettuati ordinata per data
-- Modificare i propri dati anagrafici e le informazioni di pagamento
 - Possibilità di aggiungere una recensione ai prodotti acquistati
-- Possibilità di ricevere codici coupon
 
 ### Funzionalità utente guest
 
