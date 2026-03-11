@@ -1,5 +1,7 @@
 # Comic Shop – Web Application
-
+<p align="center">
+  <img src="/src/main/webapp/assets/img/logo/logo.png" alt="LogoComicShop" width="500"/>
+</p>
 Applicazione web sviluppata per l’esame di **Tecnologie Software per il Web**.  
 Il progetto consiste nello sviluppo di un sito web per la gestione e la consultazione del catalogo di una **fumetteria online**.
 
