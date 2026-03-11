@@ -1,7 +1,7 @@
 # Comic Shop – Web Application
 
 <p align="center">
-  <img src="https://github.com/Vincenzo2002/ComicShop/blob/main/src/main/webapp/assets/img/logo/logo.png" alt="LogoComicShop" width="300"/>
+  <img src="https://github.com/Vincenzo2002/ComicShop/blob/main/src/main/webapp/assets/img/logo/logo.png" alt="LogoComicShop" width="400"/>
 </p>
 
 Applicazione web sviluppata per l’esame di **Tecnologie Software per il Web**.  
